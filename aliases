@@ -10,3 +10,7 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 tickets() {
   open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/tickets
 }
+
+kll() {
+  killall −9 $1
+}
