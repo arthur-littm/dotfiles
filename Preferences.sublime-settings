@@ -19,6 +19,37 @@
     "public/packs",
     "coverage"
   ],
+  "binary_file_patterns":
+  [
+    "*.cache",
+    ".byebug_history",
+    "/.bundle",
+    "*.eot",
+    "*.ttf",
+    "*.woff",
+    "*.woff2",
+    "*.swp",
+    "*.swo",
+    "*.log",
+    "*.png",
+    "*.gif",
+    "*.jpg",
+    "*.webp",
+    "*.svg",
+    "*.pack",
+    "*.elmi",
+    "*.elmo"
+  ],
+  "ensure_newline_at_eof_on_save": true,
+  "folder_exclude_patterns":
+  [
+    "node_modules",
+    "public/packs",
+    "tmp",
+    "logs",
+    ".git",
+    "vendor"
+  ],
   "highlight_modified_tabs": true,
   "hot_exit": false,
   "ignored_packages":
@@ -35,5 +66,11 @@
   "trim_automatic_white_space": true,
   "trim_trailing_white_space_on_save": true,
   "use_tab_stops": true,
-  "word_wrap": false
+  "show_encoding": true,
+  "show_full_path": true,
+  "show_line_endings": true,
+  "spell_check": true,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
 }
+
