@@ -11,6 +11,7 @@ tickets() {
   open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/tickets
 }
 
+# Kill processes (eg: kll ruby)
 kll() {
   killall −9 $1
 }
