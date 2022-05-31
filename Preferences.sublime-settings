@@ -5,19 +5,12 @@
   "update_check": false,
   "folder_exclude_patterns":
   [
-    "tmp",
-    "log",
-    ".git",
-    ".svn",
-    "_site",
-    ".bundle",
-    ".sass-cache",
-    ".asset-cache",
-    "build",
     "node_modules",
-    "dist",
     "public/packs",
-    "coverage"
+    "tmp",
+    "logs",
+    ".git",
+    "vendor",
   ],
   "binary_file_patterns":
   [
@@ -40,8 +33,8 @@
     "*.elmi",
     "*.elmo"
   ],
-  "ensure_newline_at_eof_on_save": true,
-  "folder_exclude_patterns":
+  /*"ensure_newline_at_eof_on_save": true,*/
+  /*"folder_exclude_patterns":
   [
     "node_modules",
     "public/packs",
@@ -49,12 +42,12 @@
     "logs",
     ".git",
     "vendor"
-  ],
+  ],*/
   "highlight_modified_tabs": true,
   "hot_exit": false,
   "ignored_packages":
   [
-    "Vintage"
+    "Vintage",
   ],
   "remember_open_files": false,
   "rulers":
@@ -70,7 +63,7 @@
   "show_full_path": true,
   "show_line_endings": true,
   "spell_check": true,
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true
+  /*"translate_tabs_to_spaces": true,*/
+  /*"trim_trailing_white_space_on_save": true*/
+  "theme": "Darkmatter.sublime-theme",
 }
-
