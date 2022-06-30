@@ -47,6 +47,7 @@
   "hot_exit": false,
   "ignored_packages":
   [
+    "GoSublime",
     "Vintage",
   ],
   "remember_open_files": false,
@@ -66,4 +67,5 @@
   /*"translate_tabs_to_spaces": true,*/
   /*"trim_trailing_white_space_on_save": true*/
   "theme": "Darkmatter.sublime-theme",
+  "font_size": 16,
 }

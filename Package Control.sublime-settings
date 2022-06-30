@@ -19,6 +19,7 @@
     "Git",
     "Git Commit Message Syntax",
     "GitGutter",
+    "GitLink",
     "Gofmt",
     "GoSublime",
     "GraphQL",
@@ -48,5 +49,6 @@
   "bootstrapped": true,
   "in_process_packages":
   [
+    "GoSublime",
   ],
 }

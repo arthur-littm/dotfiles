@@ -11,6 +11,8 @@ tickets() {
   open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/tickets
 }
 
+alias lofi='open -a "Google Chrome" https://www.lofi.cafe/'
+
 # Kill processes (eg: kll ruby)
 kll() {
   killall −9 $1
