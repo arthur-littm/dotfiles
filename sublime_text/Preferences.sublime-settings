@@ -1,0 +1,67 @@
+{
+	"added_words":
+	[
+	],
+	"always_show_minimap_viewport": true,
+	"auto_find_in_selection": true,
+	"binary_file_patterns":
+	[
+		"*.cache",
+		".byebug_history",
+		"/.bundle",
+		"*.eot",
+		"*.ttf",
+		"*.woff",
+		"*.woff2",
+		"*.swp",
+		"*.swo",
+		"*.log",
+		"*.png",
+		"*.gif",
+		"*.jpg",
+		"*.webp",
+		"*.svg",
+		"*.pack",
+		"*.elmi",
+		"*.elmo"
+	],
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		"public/packs",
+		"tmp",
+		"logs",
+		".git",
+		"vendor"
+	],
+	"font_size": 12,
+	"highlight_trailing_whitespace": true,
+	"highlight_trailing_whitespace_color": "#000000",
+	"highlight_trailing_whitespace_fill": false,
+	"highlight_trailing_whitespace_non_cursor": false,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage"
+	],
+	"ignored_words":
+	[
+	],
+	"remember_full_screen": true,
+	"rulers":
+	[
+		80,
+		100
+	],
+	"save_on_focus_lost": true,
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"show_full_path": true,
+	"show_line_endings": true,
+	"spell_check": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
+

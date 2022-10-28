@@ -12,8 +12,10 @@ tickets() {
 }
 
 alias lofi='open -a "Google Chrome" https://www.lofi.cafe/'
+alias todo='open -a "Google Chrome" https://app.any.do/myday'
 
 # Kill processes (eg: kll ruby)
 kll() {
   killall −9 $1
 }
+

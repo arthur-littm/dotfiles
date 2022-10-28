@@ -1,0 +1,46 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"install_prereleases":
+	[
+		"Elm Language Support"
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"All Autocomplete",
+		"AutoWrap",
+		"Bracketeer",
+		"BracketHighlighter",
+		"Dockerfile Syntax Highlighting",
+		"Elm Format on Save",
+		"Elm Syntax Highlighting",
+		"Flow",
+		"Git",
+		"Git Commit Message Syntax",
+		"Gofmt",
+		"GoSublime",
+		"GraphQL",
+		"Highlight Trailing Whitespace",
+		"Naomi",
+		"Package Control",
+		"PostgreSQL Syntax Highlighting",
+		"Pretty JSON",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-erblint",
+		"SublimeLinter-eslint",
+		"SublimeLinter-flow",
+		"SublimeLinter-golint",
+		"SublimeLinter-gotype",
+		"SublimeLinter-govet",
+		"SublimeLinter-haml-lint",
+		"SublimeLinter-rubocop"
+	],
+	"repositories":
+	[
+	]
+}

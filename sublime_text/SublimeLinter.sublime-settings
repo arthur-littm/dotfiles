@@ -1,0 +1,39 @@
+// SublimeLinter Settings - User
+{
+    "linters": {
+        "rubocop": {
+            "args": ["--config", "~/ButternutBox/.rubocop.yml"],
+            "selector": "source.ruby - text.html.ruby - text.haml"
+        },
+
+        "scsslint": {
+            "selector": "source.scss"
+        },
+        "eslint": {
+            "args": ["--parser", "babel-eslint", "--plugin", "flowtype"],
+            "selector": "source.js - text.html.ruby - text.html.basic"
+        },
+        "flow": {
+          "selector": "source.js - text.html.ruby - text.haml - text.html.basic"
+        },
+        "golint": {
+            "selector": "source.go"
+        },
+        "gotype": {
+            "selector": "source.go"
+        },
+        "govet": {
+            "selector": "source.go",
+            "args": ["-shadow"]
+        },
+        "dockerfilelint": {
+            "selector": "source.dockerfile"
+        },
+        "erblint": {
+            "selector": "text.html.ruby"
+        },
+        "hamllint": {
+            "selector": "text.haml"
+        }
+    }
+}
