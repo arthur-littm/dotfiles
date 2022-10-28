@@ -2,7 +2,7 @@
 {
     "linters": {
         "rubocop": {
-            "args": ["--config", "~/ButternutBox/.rubocop.yml"],
+            "args": ["--config", "~/code/butternutbox/ButternutBox/.rubocop.yml"],
             "selector": "source.ruby - text.html.ruby - text.haml"
         },
 
@@ -10,21 +10,10 @@
             "selector": "source.scss"
         },
         "eslint": {
-            "args": ["--parser", "babel-eslint", "--plugin", "flowtype"],
-            "selector": "source.js - text.html.ruby - text.html.basic"
+            "selector": "source.ts, source.tsx, source.js - text.html.ruby - text.html.basic"
         },
         "flow": {
           "selector": "source.js - text.html.ruby - text.haml - text.html.basic"
-        },
-        "golint": {
-            "selector": "source.go"
-        },
-        "gotype": {
-            "selector": "source.go"
-        },
-        "govet": {
-            "selector": "source.go",
-            "args": ["-shadow"]
         },
         "dockerfilelint": {
             "selector": "source.dockerfile"

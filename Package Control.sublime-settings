@@ -20,10 +20,10 @@
 		"Flow",
 		"Git",
 		"Git Commit Message Syntax",
-		"Gofmt",
-		"GoSublime",
 		"GraphQL",
 		"Highlight Trailing Whitespace",
+		"LSP",
+		"LSP-typescript",
 		"Naomi",
 		"Package Control",
 		"PostgreSQL Syntax Highlighting",
@@ -34,13 +34,11 @@
 		"SublimeLinter-contrib-erblint",
 		"SublimeLinter-eslint",
 		"SublimeLinter-flow",
-		"SublimeLinter-golint",
-		"SublimeLinter-gotype",
-		"SublimeLinter-govet",
 		"SublimeLinter-haml-lint",
-		"SublimeLinter-rubocop"
+		"SublimeLinter-rubocop",
+		"SublimeLinter-ruby",
 	],
 	"repositories":
 	[
-	]
+	],
 }

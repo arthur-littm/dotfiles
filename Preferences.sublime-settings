@@ -7,6 +7,8 @@
 	"binary_file_patterns":
 	[
 		"*.cache",
+
+
 		".byebug_history",
 		"/.bundle",
 		"*.eot",
@@ -43,8 +45,18 @@
 	"highlight_trailing_whitespace_non_cursor": false,
 	"ignored_packages":
 	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"Babel",
+		"Color Highlight",
+		"ERB Snippets",
+		"GoSublime",
 		"Markdown",
-		"Vintage"
+		"Rails Completions",
+		"SublimeLinter-contrib-sass-lint",
+		"SublimeLinter-contrib-scss-lint",
+		"Theme - Darkmatter",
+		"Vintage",
 	],
 	"ignored_words":
 	[
@@ -62,6 +74,5 @@
 	"show_line_endings": true,
 	"spell_check": true,
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
 }
-
