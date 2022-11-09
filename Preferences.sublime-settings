@@ -1,6 +1,7 @@
 {
 	"added_words":
 	[
+		"ok",
 	],
 	"always_show_minimap_viewport": true,
 	"auto_find_in_selection": true,
@@ -38,7 +39,7 @@
 		".git",
 		"vendor"
 	],
-	"font_size": 12,
+	"font_size": 15,
 	"highlight_trailing_whitespace": true,
 	"highlight_trailing_whitespace_color": "#000000",
 	"highlight_trailing_whitespace_fill": false,
@@ -60,6 +61,7 @@
 	],
 	"ignored_words":
 	[
+		"display16",
 	],
 	"remember_full_screen": true,
 	"rulers":
