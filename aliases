@@ -17,6 +17,9 @@ alias todo='open -a "Google Chrome" https://app.any.do/myday'
 # Clean up local branches
 alias 'sweep'='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
+# Run eslint on files changed (compared to master branch)
+alias 'lint'='npx eslint $(git diff master... --name-only -- "*.ts" "*.tsx" "*.js" "*.jsx")'
+
 # Kill processes (eg: kll ruby)
 kll() {
   killall −9 $1
