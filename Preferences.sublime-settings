@@ -1,4 +1,11 @@
 {
+	"paths": {
+        "linux": [],
+        "osx": [
+            "~/.rbenv/shims/"
+		],
+        "windows": [],
+    },
 	"added_words":
 	[
 		"ok",
@@ -47,22 +54,13 @@
 	"highlight_trailing_whitespace_non_cursor": false,
 	"ignored_packages":
 	[
-		"A File Icon",
-		"AdvancedNewFile",
-		"Babel",
-		"Color Highlight",
-		"ERB Snippets",
-		"GoSublime",
 		"Markdown",
-		"Rails Completions",
-		"SublimeLinter-contrib-sass-lint",
-		"SublimeLinter-contrib-scss-lint",
-		"Theme - Darkmatter",
 		"Vintage",
 	],
 	"ignored_words":
 	[
 		"display16",
+		"swappable",
 	],
 	"remember_full_screen": true,
 	"rulers":
@@ -78,4 +76,5 @@
 	"spell_check": true,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"index_files": true,
 }

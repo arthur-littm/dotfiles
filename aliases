@@ -15,7 +15,7 @@ alias lofi='open -a "Google Chrome" https://www.lofi.cafe/'
 alias todo='open -a "Google Chrome" https://app.any.do/myday'
 
 # Clean up local branches
-alias 'sweep'='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
+alias 'sweep'='git branch | grep -v "master" | xargs git branch -D'
 
 # Run eslint on files changed (compared to master branch)
 alias 'lint'='npx eslint $(git diff master... --name-only -- "*.ts" "*.tsx" "*.js" "*.jsx")'
@@ -25,3 +25,4 @@ kll() {
   killall −9 $1
 }
 
+alias stt='mine .'  # Open current directory in RubyMine
