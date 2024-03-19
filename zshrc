@@ -45,3 +45,4 @@ export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bi
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
 
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
