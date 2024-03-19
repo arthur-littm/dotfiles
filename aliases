@@ -10,3 +10,19 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 tickets() {
   open -a 'Google Chrome' https://kitt.lewagon.com/camps/$1/tickets
 }
+
+alias lofi='open -a "Google Chrome" https://www.lofi.cafe/'
+alias todo='open -a "Google Chrome" https://app.any.do/myday'
+
+# Clean up local branches
+alias 'sweep'='git branch | grep -v "master" | xargs git branch -D'
+
+# Run eslint on files changed (compared to master branch)
+alias 'lint'='npx eslint $(git diff master... --name-only -- "*.ts" "*.tsx" "*.js" "*.jsx")'
+
+# Kill processes (eg: kll ruby)
+kll() {
+  killall −9 $1
+}
+
+alias stt='mine .'  # Open current directory in RubyMine

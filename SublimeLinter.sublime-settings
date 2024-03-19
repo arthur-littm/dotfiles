@@ -1,10 +1,28 @@
+// SublimeLinter Settings - User
 {
-  "paths": {
-    "linux": [
-      "~/.rbenv/shims"
-    ],
-    "osx": [
-      "~/.rbenv/shims"
-    ]
-  }
+    "linters": {
+        "rubocop": {
+            "args": ["--config", "~/code/butternutbox/ButternutBox/.rubocop.yml"],
+            "selector": "source.ruby - text.html.ruby - text.haml"
+        },
+
+        "scsslint": {
+            "selector": "source.scss"
+        },
+        "eslint": {
+            "selector": "source.ts, source.tsx, source.js - text.html.ruby - text.html.basic"
+        },
+        "flow": {
+          "selector": "source.js - text.html.ruby - text.haml - text.html.basic"
+        },
+        "dockerfilelint": {
+            "selector": "source.dockerfile"
+        },
+        "erblint": {
+            "selector": "text.html.ruby"
+        },
+        "hamllint": {
+            "selector": "text.haml"
+        }
+    }
 }

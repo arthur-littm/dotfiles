@@ -1,8 +1,9 @@
-This repository is used by [Le Wagon](https://www.lewagon.com) students during our 9-week [coding bootcamp](https://www.lewagon.com).
+# Sublime Text Configuration files
 
-## Toolset
+This directory contains a set of `.sublime-settings` files. These `.sublime-settings` will:
 
-- [oh-my-zsh](http://ohmyz.sh/)
-- [Sublime Text](https://www.sublimetext.com/)
-- [git](https://git-scm.com/)
-- Ruby via [`rbenv`](https://github.com/rbenv/rbenv)
+1. Configure a set of prefences for Sublime Text (rulers, ignored files, etc)
+2. Set syntax specific rules (tabs/spaces, indentation amount, etc)
+3. Specifiy what packages are to be installed by default
+
+These files should be placed in `/Users/<USER>/Library/Application Support/Sublime Text 3/Packages/User/` or wherever `Sublime Text 3/Packages/User/` lives on your machine. Once placed in that directory, they should just work provided the appropriate dependencies are installed (RuboCop, Node, ESLint, etc).

@@ -1,16 +1,49 @@
 {
-  "installed_packages":
-  [
-    "AdvancedNewFile",
-    "All Autocomplete",
-    "Babel",
-    "Emmet",
-    "ERB Snippets",
-    "Git",
-    "GitGutter",
-    "Package Control",
-    "SCSS",
-    "SublimeLinter",
-    "SublimeLinter-rubocop"
-  ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"install_prereleases":
+	[
+		"Elm Language Support"
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"All Autocomplete",
+		"AutoWrap",
+		"Bracketeer",
+		"BracketHighlighter",
+		"Case Conversion",
+		"Dockerfile Syntax Highlighting",
+		"Elm Format on Save",
+		"Elm Syntax Highlighting",
+		"FileIcons",
+		"Flow",
+		"Git",
+		"Git Commit Message Syntax",
+		"GitLink",
+		"GraphQL",
+		"Highlight Trailing Whitespace",
+		"LSP",
+		"LSP-copilot",
+		"LSP-typescript",
+		"Naomi",
+		"Package Control",
+		"PostgreSQL Syntax Highlighting",
+		"Pretty JSON",
+		"Ruby on Rails snippets",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-erblint",
+		"SublimeLinter-eslint",
+		"SublimeLinter-flow",
+		"SublimeLinter-haml-lint",
+		"SublimeLinter-rubocop",
+		"SublimeLinter-ruby",
+	],
+	"repositories":
+	[
+	],
 }
