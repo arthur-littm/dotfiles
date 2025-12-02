@@ -20,9 +20,80 @@ alias 'sweep'='git branch | grep -v "master" | xargs git branch -D'
 # Run eslint on files changed (compared to master branch)
 alias 'lint'='npx eslint $(git diff master... --name-only -- "*.ts" "*.tsx" "*.js" "*.jsx")'
 
-# Kill processes (eg: kll ruby)
+# Kill processes by name with better feedback (eg: kll ruby)
 kll() {
-  killall −9 $1
+  if [ -z "$1" ]; then
+    echo "Usage: kll <process_name>"
+    return 1
+  fi
+  local count=$(ps aux | grep -v grep | grep -i "$1" | wc -l | tr -d ' ')
+  if [ "$count" -gt 0 ]; then
+    ps aux | grep -v grep | grep -i "$1" | awk '{print $2}' | xargs kill -9
+    echo "Killed $count process(es) matching '$1'"
+  else
+    echo "No processes found matching '$1'"
+  fi
 }
 
-alias stt='mine .'  # Open current directory in RubyMine
+# Kill process on a specific port (eg: killport 3000)
+killport() {
+  if [ -z "$1" ]; then
+    echo "Usage: killport <port_number>"
+    return 1
+  fi
+  local pid=$(lsof -ti:$1)
+  if [ -n "$pid" ]; then
+    kill -9 $pid
+    echo "Killed process on port $1 (PID: $pid)"
+  else
+    echo "No process found on port $1"
+  fi
+}
+
+alias stt='windsurf .'  # Open current directory in Cursor
+
+# ===== FZF Integration (requires: brew install fzf) =====
+# Fuzzy find and checkout git branch
+gcob() {
+  local branches branch
+  branches=$(git branch -a | grep -v HEAD) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/origin/##")
+}
+
+# Fuzzy git log viewer with preview
+flog() {
+  git log --oneline --color=always --decorate | \
+  fzf --ansi --no-sort --reverse --preview 'git show --color=always {1}' \
+      --bind 'enter:execute(git show {1} | less -R)'
+}
+
+# Fuzzy process kill
+kllfzf() {
+  local pid
+  pid=$(ps aux | sed 1d | fzf -m | awk '{print $2}')
+  if [ "x$pid" != "x" ]; then
+    echo $pid | xargs kill -9
+    echo "Killed processes: $pid"
+  fi
+}
+
+# ===== Modern CLI Tool Aliases =====
+# bat - better cat with syntax highlighting
+alias cat='bat --paging=never'
+alias catt='bat'  # Use original bat with paging
+
+# eza - better ls with colors and icons
+alias ls='eza --icons'
+alias ll='eza -la --icons --git'
+alias lt='eza --tree --level=2 --icons'
+alias llt='eza --tree --level=3 --long --icons'
+
+# ripgrep - faster grep
+alias grep='rg'
+
+# fd - better find
+alias find='fd'
+
+# tldr - simplified man pages
+alias help='tldr'

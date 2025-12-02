@@ -47,7 +47,7 @@
 		".git",
 		"vendor"
 	],
-	"font_size": 15,
+	"font_size": 16,
 	"highlight_trailing_whitespace": true,
 	"highlight_trailing_whitespace_color": "#000000",
 	"highlight_trailing_whitespace_fill": false,

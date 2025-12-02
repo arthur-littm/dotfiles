@@ -36,7 +36,7 @@
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-contrib-erblint",
+		"SublimeLinter-erblint",
 		"SublimeLinter-eslint",
 		"SublimeLinter-flow",
 		"SublimeLinter-haml-lint",
