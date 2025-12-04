@@ -2,8 +2,8 @@ ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-# ZSH_THEME="robbyrussell"  # Disabled in favor of Starship prompt
-ZSH_THEME=""  # Use empty theme for Starship
+ZSH_THEME="robbyrussell"  # Disabled in favor of Starship prompt
+# ZSH_THEME=""  # Use empty theme for Starship
 
 # Useful plugins for Rails development with Sublime Text
 plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
@@ -65,4 +65,4 @@ esac
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
 # Initialize Starship prompt (must be at the end)
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
